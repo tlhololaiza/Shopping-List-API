@@ -1,0 +1,28 @@
+{
+  "name": "shopping-list-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlhololaiza/Shopping-List-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlhololaiza/Shopping-List-API/issues"
+  },
+  "homepage": "https://github.com/tlhololaiza/Shopping-List-API#readme",
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
