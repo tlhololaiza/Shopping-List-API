@@ -194,6 +194,17 @@ async function requestHandler(req: IncomingMessage, res: ServerResponse) {
       return;
     }
 
+    // Check if route exists but method is not supported
+    if (pathname === '/items' || pathname === '/health') {
+      sendErrorResponse(res, 405, `Method ${method} not allowed for ${pathname}`);
+      return;
+    }
+
+    if (pathname.startsWith('/items/')) {
+      sendErrorResponse(res, 405, `Method ${method} not allowed for ${pathname}`);
+      return;
+    }
+
     // 404 - Route not found
     sendErrorResponse(res, 404, `Route ${pathname} not found`);
 
